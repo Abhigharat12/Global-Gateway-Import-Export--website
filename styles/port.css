@@ -1,0 +1,202 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Styling for the header section */
+.header {
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px 20px;
+    background: linear-gradient(to right, #a3cb38, #007bff);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .main-heading {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .slogan {
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #f9f9f9;
+  }
+  
+  /* Animation for floating effect */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+  /* Main Box Styling */
+  .main_box {
+    background-image: url(sh.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Sidebar Toggle Button */
+  .btn_one {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  
+  .btn_one:hover {
+    font-size: 30px;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar_menu {
+    position: fixed;
+    left: -350px;
+    height: 80vh;
+    width: 300px;
+    background-color: rgba(21, 28, 28, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  /* Sidebar Close Button */
+  .btn_two {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  
+  .btn_two:hover {
+    font-size: 25px;
+    color: red;
+  }
+  
+  /* Logo Section */
+  .sidebar_menu .logo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  .sidebar_menu .logo a {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Menu Items */
+  .sidebar_menu .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 20px;
+  }
+  
+  .sidebar_menu .menu li {
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .sidebar_menu .menu li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .sidebar_menu .menu li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Social Media Icons */
+  .sidebar_menu .social_media {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+  }
+  
+  .sidebar_menu .social_media i {
+    font-size: 24px;
+    color: aqua;
+    transition: all 0.3s ease;
+    bottom: 30px;
+  }
+  
+  .sidebar_menu .social_media i:hover {
+    font-size: 28px;
+    color: white;
+  }
+  
+  /* Checkbox for Sidebar Toggle */
+  #check {
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar_menu {
+    left: 0;
+  }
+  
+  #check:checked ~ .btn_one {
+    opacity: 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .sidebar_menu {
+      width: 250px;
+    }
+  
+    .sidebar_menu .menu li {
+      font-size: 16px;
+    }
+  
+    .btn_one {
+      font-size: 20px;
+    }
+  
+    .btn_two {
+      font-size: 18px;
+    }
+  }
+  

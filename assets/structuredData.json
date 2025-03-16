@@ -1,0 +1,64 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://marsstrong.vercel.app/#organization",
+    "name": "Marsstrong International",
+    "legalName": "Marsstrong International Private Limited",
+    "url": "https://marsstrong.vercel.app/",
+    "logo": "https://marsstrong.vercel.app/images/logo.png",
+    "description": "Marsstrong International provides comprehensive business solutions including company incorporation, tax filings, shipping & logistics, import-export facilitation in India. We offer services like company registration, GST, DGFT services, customs clearance, and more.",
+    "founder": {
+      "@type": "Person",
+      "name": "Mangesh Phapale"
+    },
+    "foundingDate": "2017-11",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "401, C-2, Panvelkars Sankul",
+      "addressLocality": "Badlapur (East)",
+      "addressRegion": "Maharashtra",
+      "postalCode": "421503",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-87880-15377",
+      "email": "marsstrong4@gmail.com"
+    },
+    "sameAs": [
+      "https://www.facebook.com/marsstrong",
+      "https://twitter.com/marsstrong",
+      "https://www.linkedin.com/company/marsstrong"
+    ],
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Maharashtra"
+      },
+      {
+        "@type": "Country",
+        "name": "India"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Marsstrong International Services",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalogNode",
+          "name": "Company Registration",
+          "description": "We offer company registration services including Private Limited Company, Limited Liability Partnership (LLP), Partnership Firm, Proprietorship Firm, Cooperative Society, and Public Limited Company."
+        },
+        {
+          "@type": "OfferCatalogNode",
+          "name": "Tax Filing",
+          "description": "Our tax filing services include Goods and Services Tax (GST), MVAT/CST, Excise, MSME/SSI, PAN/TAN, and FASSAI Registration."
+        },
+        {
+          "@type": "OfferCatalogNode",
+          "name": "Shipping & Logistics",
+          "description": "We provide shipping and logistics services like custom clearance, LUT Bond, freight forwarding, warehousing, transport management, and documentation services."
+        }
+      ]
+    }
+  }
